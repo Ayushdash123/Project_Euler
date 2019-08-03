@@ -19,6 +19,8 @@ return(x);
 int main()
 {long int x ,n ,a;
  n=600851470143;
+cout<<"Prime factors are "<<endl;
 a=primef(n,x);
-cout<<" "<<a;
+
+cout<<"\nThe Largest prime factor is "<<a;
 return(0);}
