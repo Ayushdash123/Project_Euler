@@ -18,7 +18,7 @@ return(x);
 }
 int main()
 {long int x ,n ,a;
- n=600851470143;
+ n=600851475143;
 cout<<"Prime factors are "<<endl;
 a=primef(n,x);
 
