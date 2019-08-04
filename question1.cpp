@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void main()
+int main()
 {
 	int  i=0, sum=0;
 	
