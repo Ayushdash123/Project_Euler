@@ -22,9 +22,9 @@ int main()
 	int rev = 0;
 	int n, l_palin = 0;
 	
-	for(no1 = 100; no1 < 1000; no1++)
+	for(no1 = 999; no1>=100; no1--)
 	{
-		for(no2 = 100; no2 < 1000; no2++)
+		for(no2 =999; no2 >= 100; no2--)
 		{
 			product = no1 * no2;
 			n = product;
