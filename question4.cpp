@@ -39,7 +39,7 @@ int main()
 			
 		}
 	}
-cout<<no1<<"*"<<no2<<" = "<<l_palin;
+cout<<l_palin;
 
 	
 return 0;	
