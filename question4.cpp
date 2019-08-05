@@ -34,14 +34,13 @@ int main()
 			if(rev == n && rev > l_palin)
 			{
 				l_palin = rev;
-				cout<<no1<<"*"<<no2<<" = "<<l_palin;
-				cout<<endl;
+				
 			}
 			
 		}
 	}
-	
-	
+cout<<no1<<"*"<<no2<<" = "<<l_palin;
+
 	
 return 0;	
 }
