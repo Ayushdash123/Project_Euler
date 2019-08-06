@@ -1,25 +1,25 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
+
+int gcd(int a, int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b % a, a);
+}
+
 
 int main()
 {
-	int sum_square = 0;
-	int square_sum = 0;
-	int diff = 0;
-	int sum = 0;
-	
-	
-	for(int i = 1; i <= 100; i++)
-	{
-		square_sum += pow(i,2);
-		sum += i;
-		sum_square = pow(sum,2);	
-	} 
-	
-	diff = sum_square - square_sum;
-	cout<<diff;
-	
-return 0;	
-}
+    long long hcf = 1, lcm = 1;
+    int i;
 
+    for(i = 2; i <= 20; i++)
+    {
+        hcf = gcd(lcm, i);
+        lcm = (lcm * i) / hcf;
+    }
+
+    cout<<"The Lcm is: "<<lcm;
+    return 0;
+}
