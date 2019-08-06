@@ -1,26 +1,17 @@
-#include <iostream>
-#include <math.h>
+#include<iostream>
+#include<cmath>
 using namespace std;
-
-int main()
-{
-	int a, b, c;
-	
-	for(c = 1; c < 500; c++)
-	{
-		for(b = 1; b < c; b++)
-		{
-			for(a = 1; a < b; a++)
-			{
-				if(pow(a,2) + pow(b,2) == pow(c, 2) && a + b + c == 1000)
-				{
-					cout<<"The numbers are: "<<a<<b<<c<<endl;
-					cout<<" product is: "<<a*b*c;
-				}
-			}
-		}
-	}
-	
-	
-return 0;	
+int main(void)
+{int a,b,c=0;
+long x;
+for(a=4;a<1000;a++)
+{for(b=a+1;(a+b)<999;b++)
+ {c=1000-(a+b);
+  if((c*c)==((a*a)+(b*b)))
+   break;
+  c=0;
+ }if(c>0) break;
+} x=a*b*c;
+cout<<x;
+return 0;
 }
